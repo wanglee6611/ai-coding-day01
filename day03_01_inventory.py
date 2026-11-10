@@ -61,7 +61,12 @@ def main():
     init_db(session)
 
     while True:
-        print("\n1. 查询所有设备  2. 按设备名称查询  3. 按设备类型查询  4. 按机房关键词查询  0. 退出")
+        print("\n=== 设备 Inventory 管理系统 ===")
+        print("1. 查看所有设备")
+        print("2. 按设备名称精确查询 (filter_by)")
+        print("3. 按设备类型精确查询 (filter_by)")
+        print("4. 按机房关键词模糊查询 (like)")
+        print("0. 退出")
         choice = input("请选择: ").strip()
 
         if choice == "0":
